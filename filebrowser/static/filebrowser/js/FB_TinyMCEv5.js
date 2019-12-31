@@ -2,7 +2,7 @@
 var FileBrowserDialogue = {
     fileSubmit : function (FileURL) {
         window.parent.postMessage({
-          mceAction: 'insertContent',
+          action: 'chooseUrl',
           content: FileURL
         }, '*');
 
